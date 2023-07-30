@@ -3,8 +3,10 @@ from streamlit_chat import message
 from utils import get_initial_message, get_chatgpt_response, update_chat
 import os
 import openai
-
-openai.api_key = os.getenv('OPENAI_API_KEY')
+def open_file(filepath):
+    with open(filepath, 'r', encoding='utf-8', errors='ignore') as infile:
+        return infile.read()
+openai.api_key = open_file('key_openai.txt').strip()
 st.title("Chatbot : ChatGPT and Streamlit Chat")
 st.subheader("AI Tutor:")
 
