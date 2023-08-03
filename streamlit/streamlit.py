@@ -8,7 +8,7 @@ import convertapi
 import numpy as np
 convertapi.api_secret = 'ySP84j1dHZ0L4j3w'
 
-st.title("PDF Table Extractor")
+st.title("PDF Table Extractor dashboard")
 
 # file uploader on streamlit 
 
