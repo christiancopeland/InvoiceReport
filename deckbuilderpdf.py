@@ -171,7 +171,7 @@ def save_yaml(filepath, data):
     with open(filepath, 'w', encoding='utf-8') as file:
         yaml.dump(data, file, allow_unicode=True)
         
-def process_invoice_pdf(file_path):
+def process_invoice_pdf():
     files = os.listdir('pdfs/')
     print(files)
     output = ''
